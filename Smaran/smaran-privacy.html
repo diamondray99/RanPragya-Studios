@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Smaran</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9fb;
+        }
+        h1 {
+            color: #6c63ff;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1e2843;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        p, li {
+            font-size: 1rem;
+            color: #555555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .last-updated {
+            font-style: italic;
+            color: #888888;
+            margin-bottom: 30px;
+        }
+        .highlight-box {
+            background-color: #f1efff;
+            border-left: 4px solid #6c63ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .highlight-box p {
+            margin: 0;
+            font-weight: 500;
+            color: #1e2843;
+        }
+        code {
+            background-color: #eeeeee;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Last Updated: July 4, 2026</div>
+
+    <p>Welcome to <strong>Smaran</strong>. Smaran is a lightweight, offline-first personal reminder assistant application designed and built with user privacy as our absolute highest priority. This Privacy Policy describes how Smaran collects, uses, and safeguards your information.</p>
+
+    <div class="highlight-box">
+        <p>Smaran is designed to operate completely offline. We do not host any servers, we do not collect telemetry, and we never transmit your personal data, reminders, or settings over the internet.</p>
+    </div>
+
+    <h2>1. Data Collection & Storage</h2>
+    <p>All data you create inside Smaran—including your chats, reminder titles, due dates, task statuses, and configuration preferences—is stored <strong>exclusively on your physical device</strong> in a local, secure SQLite/Room database.</p>
+    <ul>
+        <li><strong>No External Transmission</strong>: Your data is never uploaded, transferred, or synced to any cloud databases or external servers.</li>
+        <li><strong>No Telemetry or Tracking</strong>: Smaran contains zero analytics SDKs (such as Firebase Analytics, Mixpanel, etc.) and zero crash-reporting tools that transmit data. Your usage patterns are entirely private to you.</li>
+        <li><strong>No Advertising Trackers</strong>: Smaran does not display ads and does not integrate any advertising libraries or tracking cookies.</li>
+    </ul>
+
+    <h2>2. Permissions Used and Rationale</h2>
+    <p>To provide full reminder utility on Android, Smaran requests the following permissions. Each permission has a strictly defined, privacy-safe function:</p>
+    <ul>
+        <li><code>RECORD_AUDIO</code> (Microphone Access): Used solely when you actively tap the 🎤 Mic icon in the chat screen to use voice typing. Voice dictation is processed directly on your device using Android's native Speech-to-Text API. Smaran does <strong>not</strong> record, save, store, or transmit your voice or audio files.</li>
+        <li><code>POST_NOTIFICATIONS</code>: Required to show active notifications, reminders, and advance countdown alerts in your device's notification drawer.</li>
+        <li><code>SCHEDULE_EXACT_ALARM</code>: Required to ensure that your alarms and task notifications trigger exactly at the scheduled time.</li>
+        <li><code>RECEIVE_BOOT_COMPLETED</code>: Required to reschedule your pending alarms after your device is restarted. This is only active if the "Start with system" option is enabled in the app settings.</li>
+        <li><code>WAKE_LOCK</code>: Used to wake your screen briefly when a scheduled reminder is triggered so that you can see the notification instantly.</li>
+        <li><code>FOREGROUND_SERVICE</code> & <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>: Used to run a media-playback service while the phone is locked, allowing custom alarms and ringtone loops to play correctly without getting shut down by the OS background limits.</li>
+    </ul>
+
+    <h2>3. Data Deletion and Backup</h2>
+    <ul>
+        <li><strong>Permanent Deletion on Uninstall</strong>: Because Smaran is completely offline and does not maintain cloud backups, uninstalling the app or clearing the app data via your Android System Settings will <strong>permanently erase</strong> all your reminders and tasks. This data cannot be recovered.</li>
+        <li><strong>No Cloud Backups</strong>: Smaran explicitly disables the Android Auto-Backup feature (<code>android:allowBackup="false"</code>). No snapshots of your reminders database are uploaded to Google Drive.</li>
+    </ul>
+
+    <h2>4. Children's Privacy</h2>
+    <p>Smaran does not collect, process, or store any personal data of any kind from any user, including children under the age of 13. The application is completely safe for all audiences.</p>
+
+    <h2>5. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Any changes will be posted directly within the application or updated in this file. Since Smaran does not collect contact information, we recommend checking this policy occasionally for updates.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, you can contact us at: <a href="mailto:parmarritik99@zohomail.in">parmarritik99@zohomail.in</a>.</p>
+    <p style="margin-top: 40px; text-align: center; font-size: 0.9rem; color: #888888;">© 2026 RanPragya Studios. All rights reserved.</p>
+
+</body>
+</html>
